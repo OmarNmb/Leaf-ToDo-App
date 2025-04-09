@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="exitFilters" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="597.0" prefWidth="892.0" style="-fx-background-color: transparent;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jala.ToDoList.UIControllers.FilterUI">
+   <VBox fx:id="miniMenuDesplegableBase" layoutX="590.0" layoutY="110.0" prefHeight="315.0" prefWidth="193.0"
+         style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #373D20;">
+      <Label prefHeight="40.0" prefWidth="73.0" text="   Filters" textFill="WHITE">
+         <font>
+            <Font name="Liberation Serif Bold" size="19.0"/>
+         </font>
+      </Label>
+      <HBox prefHeight="253.0" prefWidth="193.0">
+         <Region prefHeight="100.0" prefWidth="11.0"/>
+         <VBox prefHeight="246.0" prefWidth="126.0">
+            <HBox prefHeight="24.0" prefWidth="142.0">
+               <Region prefHeight="20.0" prefWidth="9.0"/>
+            </HBox>
+            <HBox prefHeight="246.0" prefWidth="126.0">
+               <Region prefHeight="100.0" prefWidth="11.0"/>
+               <VBox prefHeight="250.0" prefWidth="114.0">
+                  <HBox prefHeight="26.0" prefWidth="17.0">
+                     <Label text="Status" textFill="WHITE">
+                        <font>
+                           <Font name="Liberation Serif Bold" size="18.0"/>
+                        </font>
+                     </Label>
+                     <Region prefHeight="20.0" prefWidth="9.0"/>
+                  </HBox>
+                  <RadioButton id="pendingSelectionButton" fx:id="selectPending" mnemonicParsing="false"
+                               prefHeight="26.0" prefWidth="115.0"
+                               style="-fx-border-radius: 10; -fx-border-width: 2;" text="Pending"
+                               textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="16.0"/>
+                     </font>
+                  </RadioButton>
+                  <RadioButton id="completedSelectionButton" fx:id="selectCompleted"
+                               mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0"
+                               style="-fx-border-radius: 10; -fx-border-width: 2;" text="Completed"
+                               textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="16.0"/>
+                     </font>
+                  </RadioButton>
+                  <HBox prefHeight="96.0" prefWidth="193.0">
+                     <VBox prefHeight="74.0" prefWidth="114.0">
+                        <HBox prefHeight="26.0" prefWidth="17.0">
+                           <Label text="Category" textFill="WHITE">
+                              <font>
+                                 <Font name="Liberation Serif Bold" size="18.0"/>
+                              </font>
+                           </Label>
+                           <Region prefHeight="20.0" prefWidth="9.0"/>
+                        </HBox>
+                        <RadioButton id="workSelectionButton" fx:id="selectWork"
+                                     mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0"
+                                     style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                     text="Work" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="16.0"/>
+                           </font>
+                        </RadioButton>
+                        <RadioButton id="studySelectionCategory" fx:id="selectEducative"
+                                     mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0"
+                                     style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                     text="Study" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="16.0"/>
+                           </font>
+                        </RadioButton>
+                        <RadioButton id="personalSelectionButton" fx:id="selectPersonal"
+                                     mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0"
+                                     style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                     text="Personal" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="16.0"/>
+                           </font>
+                        </RadioButton>
+                        <VBox prefHeight="93.0" prefWidth="114.0">
+                           <HBox prefHeight="26.0" prefWidth="17.0">
+                              <Label text="Priority" textFill="WHITE">
+                                 <font>
+                                    <Font name="Liberation Serif Bold" size="18.0"/>
+                                 </font>
+                              </Label>
+                              <Region prefHeight="20.0" prefWidth="9.0"/>
+                           </HBox>
+                           <RadioButton id="lowSelectionButton" fx:id="selectEasy"
+                                        mnemonicParsing="false" prefHeight="26.0"
+                                        prefWidth="115.0"
+                                        style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                        text="Low" textAlignment="JUSTIFY" textFill="WHITE">
+                              <font>
+                                 <Font name="Liberation Serif Bold" size="16.0"/>
+                              </font>
+                           </RadioButton>
+                           <RadioButton id="mediumSelectionButton" fx:id="selectMedium"
+                                        mnemonicParsing="false" prefHeight="26.0"
+                                        prefWidth="115.0"
+                                        style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                        text="Medium" textAlignment="JUSTIFY" textFill="WHITE">
+                              <font>
+                                 <Font name="Liberation Serif Bold" size="16.0"/>
+                              </font>
+                           </RadioButton>
+                           <RadioButton id="highSelectionButton" fx:id="selectHard"
+                                        mnemonicParsing="false" prefHeight="26.0"
+                                        prefWidth="115.0"
+                                        style="-fx-border-radius: 10; -fx-border-width: 2;"
+                                        text="High" textAlignment="JUSTIFY" textFill="WHITE">
+                              <font>
+                                 <Font name="Liberation Serif Bold" size="16.0"/>
+                              </font>
+                           </RadioButton>
+                           <Region prefHeight="19.0" prefWidth="114.0"/>
+                        </VBox>
+                     </VBox>
+                  </HBox>
+               </VBox>
+            </HBox>
+         </VBox>
+      </HBox>
+      <Region prefHeight="20.0" prefWidth="193.0"/>
+      <HBox prefHeight="25.0" prefWidth="193.0">
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <Region prefHeight="26.0" prefWidth="14.0"/>
+            <Button id="confirmButton" fx:id="confirmFilters" mnemonicParsing="false" prefHeight="25.0"
+                    prefWidth="80.0"
+                    style="-fx-background-color: #373D20; -fx-border-color: #EFF1ED; -fx-border-radius: 10; -fx-background-radius: 10;"
+                    text="Confirm" textFill="#eff1ed">
+               <font>
+                  <Font name="Liberation Serif Bold" size="13.0"/>
+               </font>
+            </Button>
+            <Region prefHeight="26.0" prefWidth="11.0"/>
+            <Button fx:id="#cancelButton" onMouseClicked="#cancelFilters" mnemonicParsing="false" prefHeight="23.0"
+                    prefWidth="76.0"
+                    style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #EFF1ED; -fx-background-color: #373D20;"
+                    text="Cancel" textFill="#eff1ed">
+               <font>
+                  <Font name="Liberation Serif Bold" size="13.0"/>
+               </font>
+            </Button>
+         </HBox>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="193.0"/>
+   </VBox>
+</AnchorPane>

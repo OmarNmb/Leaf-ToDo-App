@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TaskListInt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="892.0" style="-fx-background-color: #373D20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jala.ToDoList.UIControllers.ListTasksUI">
+   <AnchorPane layoutX="26.0" layoutY="29.0" prefHeight="539.0" prefWidth="823.0" style="-fx-background-color: #EFF1ED;">
+      <ImageView fx:id="menuButton" fitHeight="58.0" fitWidth="46.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#backHome" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../IMG/menu.png" />
+      </ImageView>
+      <Label layoutX="73.0" layoutY="10.0" text="To Do List" textFill="#373d20">
+         <font>
+            <Font name="Liberation Serif Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameText" layoutX="627.0" layoutY="19.0" text="Username" textFill="#373d20">
+         <font>
+            <Font name="Liberation Serif Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView id="userProfile" fitHeight="53.0" fitWidth="53.0" layoutX="763.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../IMG/usuario.png" />
+      </ImageView>
+      <Label layoutX="32.0" layoutY="85.0" text="Task List" textFill="#373d20">
+         <font>
+            <Font name="Liberation Serif Bold" size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="26.0" layoutY="147.0" prefHeight="373.0" prefWidth="784.0" style="-fx-background-color: #BCBD8B; -fx-background-radius: 10;">
+         <HBox layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="725.0">
+            <Label prefHeight="21.0" prefWidth="348.0" text="Description" textFill="#373d20">
+               <font>
+                  <Font name="Liberation Serif Bold" size="19.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="53.0" prefWidth="96.0">
+               <Label text="Due Date" textFill="#373d20">
+                  <font>
+                     <Font name="Liberation Serif Bold" size="19.0" />
+                  </font>
+               </Label>
+            </VBox>
+            <Label prefHeight="21.0" prefWidth="100.0" text="Category" textFill="#373d20">
+               <font>
+                  <Font name="Liberation Serif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="107.0" text="Priority" textFill="#373d20">
+               <font>
+                  <Font name="Liberation Serif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="69.0" text="Status" textFill="#373d20">
+               <font>
+                  <Font name="Liberation Serif Bold" size="19.0" />
+               </font>
+            </Label>
+         </HBox>
+         <ScrollPane fx:id="listTasks" layoutY="67.0" prefHeight="285.0" prefWidth="763.0" style="-fx-background-color: #BCBD8B;">
+            <VBox fx:id="taskAllDetails" prefHeight="283.0" prefWidth="761.0" style="-fx-background-color: #BCBD8B;" />
+         </ScrollPane>
+      </AnchorPane>
+      <ImageView fx:id="filterButton" fitHeight="44.0" fitWidth="43.0" layoutX="704.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../IMG/filtro.png" />
+      </ImageView>
+      <ImageView fx:id="searchButton" fitHeight="44.0" fitWidth="43.0" layoutX="644.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../IMG/busqueda-de-lupa.png" />
+      </ImageView>
+      <ImageView fx:id="orderByButton" fitHeight="44.0" fitWidth="43.0" layoutX="761.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../IMG/ordenmayormenor.png" />
+      </ImageView>
+      <Pane layoutX="-17.0" layoutY="62.0" prefHeight="3.0" prefWidth="857.0" style="-fx-background-color: #373D20;" />
+   </AnchorPane>
+</AnchorPane>
