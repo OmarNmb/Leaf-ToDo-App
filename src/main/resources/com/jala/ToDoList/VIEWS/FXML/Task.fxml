@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="taskLittleDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="347.0" style="-fx-border-radius: 10000; -fx-background-color: #ffffff; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="nameTaskText" fx:id="nameTask" layoutX="14.0" layoutY="19.0" prefWidth="130.0" text="nameTask">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <CheckBox id="statusCheck" fx:id="statusTask" layoutX="301.0" layoutY="23.0" mnemonicParsing="false" scaleX="1.4" scaleY="1.4" style="-fx-background-color: #ffffff; -fx-border-color: #586232; -fx-border-radius: 3; -fx-border-width: 3; -fx-background-radius: 10;" />
+      <Label id="dueDateText" fx:id="dateCreationTask" layoutX="14.0" layoutY="5.0" prefWidth="130.0" text="dueDate" />
+   </children>
+</Pane>

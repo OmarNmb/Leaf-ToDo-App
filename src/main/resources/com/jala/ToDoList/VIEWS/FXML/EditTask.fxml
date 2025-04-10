@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="editTaskPane" prefHeight="597.0" prefWidth="892.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="245.0" layoutY="79.0" prefHeight="440.0" prefWidth="402.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #BCBD8B;">
+         <children>
+            <Label layoutX="136.0" layoutY="14.0" text="Edit Task" textFill="#373d20">
+               <font>
+                  <Font name="Liberation Serif Bold" size="31.0" />
+               </font>
+            </Label>
+            <VBox layoutX="22.0" layoutY="64.0" prefHeight="364.0" prefWidth="410.0">
+               <children>
+                  <Label text="Name" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="26.0" prefWidth="410.0">
+                     <children>
+                        <TextField id="nameField" fx:id="nameTask" prefHeight="26.0" prefWidth="263.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff; -fx-border-radius: 10;" />
+                     </children>
+                  </HBox>
+                  <Label text="Description" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="29.0" prefWidth="410.0">
+                     <children>
+                        <TextField id="descriptionField" fx:id="descriptionTask" prefHeight="26.0" prefWidth="263.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff; -fx-border-radius: 10;" />
+                     </children>
+                  </HBox>
+                  <Label text="Priority" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox id="priorityField" fx:id="difficultyTask" prefWidth="150.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                  <Label text="Category" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox id="categoryField" fx:id="categoryTask" prefWidth="150.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                  <Label text="Due Date" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="26.0" prefWidth="410.0">
+                     <children>
+                        <ChoiceBox id="dayField" fx:id="dayDateDeliveryTask" prefHeight="26.0" prefWidth="89.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                        <Region prefHeight="26.0" prefWidth="24.0" />
+                        <ChoiceBox id="monthField" fx:id="monthDateDeliveryTask" prefHeight="26.0" prefWidth="90.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                        <Region prefHeight="26.0" prefWidth="24.0" />
+                        <ChoiceBox id="yearField" fx:id="yearDateDeliveryTask" prefHeight="26.0" prefWidth="90.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                     </children>
+                  </HBox>
+                  <Label text="Status" textFill="#373d20">
+                     <font>
+                        <Font name="Liberation Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox id="statusField" fx:id="statusTask" prefWidth="150.0" style="-fx-background-radius: 10; -fx-background-color: #ffffff;" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <HBox prefHeight="6.0" prefWidth="410.0">
+                     <children>
+                        <Button id="confirmButton" fx:id="confirmChangesTask" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: #373D20; -fx-background-radius: 10;" text="Confirm" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Region prefHeight="32.0" prefWidth="10.0" />
+                        <Button id="cancelButton" fx:id="cancelChanges" mnemonicParsing="false" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: #373D20; -fx-background-radius: 10;" text="Cancel" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Region prefHeight="32.0" prefWidth="10.0" />
+                        <Button id="deleteButton" fx:id="deleteTask" mnemonicParsing="false" prefHeight="32.0" prefWidth="56.0" style="-fx-background-color: #373D20; -fx-background-radius: 10;" textFill="WHITE">
+                           <font>
+                              <Font name="Liberation Serif Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMG/lata-de-reciclaje.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
